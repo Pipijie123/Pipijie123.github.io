@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易严选 - 以严谨的态度，为中国消费者甄选天下优品</title>
+    <link rel="stylesheet" href="./style/index.css" type="text/css">
+    <link rel="shortcut icon" href="https://you.163.com/favicon.ico?r=newgold" type="image/x-icon">
+    <link rel="stylesheet" href="./css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+    <div id="header">
+        <div id="cp-siteNav">
+            <div class="cp-row">
+                <ul>
+                    <li><a href="#">登录/注册</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">甄选家</a></li>
+                    <li><a href="#">企业采购<i class="fa fa-angle-down"></i></a></li>
+                    <li><a href="#" class="o">客户服务<i class="fa fa-angle-down"></i></a></li>
+                    <li><a href="#"><i class="myicon i-app"></i>App</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="cp-funcTab">
+            <div class="cp-row">
+                <div class="cp-logo"></div>
+                <div class="cp-search">
+                    <div class="cp-search-top">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="输入您要输入的商品..">
+                        <button>搜索</button>
+                    </div>
+                    <div class="cp-search-menu">
+                        <ul>
+                            <li><a href="#" class="active">茶</a></li>
+                            <li><a href="#">杯子</a></li>
+                            <li><a href="#">猫粮</a></li>
+                            <li><a href="#">床垫</a></li>
+                            <li><a href="#">拖鞋</a></li>
+                            <li><a href="#">枕头</a></li>
+                            <li><a href="#">牛奶</a></li>
+                            <li><a href="#">口罩</a></li>
+                            <li><a href="#">纸巾</a></li>
+                            <li><a href="#" class="last">行李箱</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cp-cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="cart">购物车</span>
+                    <span class="number">0</span>
+                </div>
+                <div class="cp-menu">
+                    <ul>
+                        <li><a href="#" class="active">首页</a></li>
+                        <li><a href="#">居家生活</a></li>
+                        <li><a href="#">宠物生活</a></li>
+                        <li><a href="#">服饰鞋包</a></li>
+                        <li><a href="#">美食酒水</a></li>
+                        <li><a href="#">个护清洁</a></li>
+                        <li><a href="#">母婴亲子</a></li>
+                        <li><a href="#">运动旅行</a></li>
+                        <li><a href="#">数码家电</a></li>
+                        <li><a href="#">严选全球</a></li>
+                        <li><a href="#">为你严选</a></li>
+                        <li><a href="#" class="last">众筹</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="m-focus">
+    </div>
+    <div id="m-newProducts">
+        <div class="cp-row">
+            <div id="m-commonHeader">
+                <div class="f-left">
+                    <h3>新品首发<small>为你寻觅世间好物</small></h3>
+                </div>
+                <div class="f-right">
+                    更多新品<i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+            <div id="m-slickWidth">
+                <div class="slick-item">
+                    <div class="hd s-item1"></div>
+                    <div class="bd">
+                        <h4>洗发水中的爱马仕 西班牙卡诗沙龙洗护发</h4>
+                        <p>
+                            <span class="realP">￥42</span>
+                            <span class="countP">￥98</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="slick-item">
+                    <div class="hd s-item2"></div>
+                    <div class="bd">
+                        <h4>【科尔沁】内蒙古传统工艺 风干牛肉干</h4>
+                        <p>
+                            <span class="realP">￥66</span>
+                            <span class="countP">￥128</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="slick-item">
+                    <div class="hd s-item3"></div>
+                    <div class="bd">
+                        <h4>黑标高端水果 “李中土豪”绿宝石黄金奈李</h4>
+                        <p>
+                            <span class="realP">￥78</span>
+                            <span class="countP">￥98</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="slick-item last">
+                    <div class="hd s-item4"></div>
+                    <div class="bd">
+                        <h4>花玉石肥皂 保湿滋润 清新优雅香气</h4>
+                        <p>
+                            <span class="realP">￥20</span>
+                            <span class="countP">￥48</spsan>
+                        </p>
+                    </div>
+                </div>
+                <div class="c"></div>
+            </div>
+            <div  id="app" :class="style1" >
+                <div class="top">-热销榜-</div>
+                <ul>
+                    <li class="first"><i class="fa fa-bar-chart-o"></i><span>全站热销榜</span></li>
+                    <li><i class="fa fa-bed"></i><span>居家生活榜</span></li>
+                    <li><i class="fa fa-female"></i><span>服饰鞋包榜</span></li>
+                    <li><i class="fa fa-bitbucket"></i><span>美食酒水榜</span></li>
+                    <li><i class="fa fa-desktop"></i><span>数码家电榜</span></li>
+                    <li><i class="fa fa-bathtub"></i><span>个护清洁榜</span></li>
+                    <li><i class="fa fa-suitcase"></i><span>运动旅行榜</span></li>
+                    <li><i class="fa fa-child"></i><span>母婴亲子榜</span></li>
+                    <li class="last"><i class="fa fa-gift"></i><span >全球特色榜</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="m-indexPopular">
+        <div class="cp-row">
+            <div class="cp-new-title">
+                <h3>人气推荐 
+                    <a href="#" class="active">编辑推荐</a>
+                    <a href="#">热销总榜</a>
+                </h3>
+                <div class="f-right">更多新品 &gt;</div>
+            </div>
+            <div id="m-product-left">
+                <div class="m-product-left-img"></div>
+                <div class="m-product-left-title">纽仕兰新西兰4.0g全/低脂纯牛<br/>奶250ml*24盒</div>
+                <div class="m-product-left-price">¥99</div>
+                <span class="countP">￥119</span>
+            </div>
+            <div id="m-product-right">
+                <div class="m-product-right-item">
+                    <div class="m-product-right-item-img i1">
+                        <div class="m-product-right-item-img-1">
+                            
+                        </div>
+                    </div>
+                    <div class="cp-new-newlist-item-title">小团圆蛋黄酥礼盒 奶黄<br/>流心味 53g*6枚</div>
+                    <div class="m-product-left-price">¥29.9</div>
+                    <span class="countP">￥42</span>
+
+                </div>
+                <div class="m-product-right-item">
+                    <div class="m-product-right-item-img i2">
+                        <div class="m-product-right-item-img-1">
+                            
+                        </div>
+                    </div>
+                    <div class="cp-new-newlist-item-title">能除臭的空气浴室香<br/>氛，空气香薰持久留香</div>
+                    <div class="m-product-left-price">¥16.9</div>
+                    <span class="countP">￥19.9</span>
+                </div>
+                <div class="m-product-right-item">
+                    <div class="m-product-right-item-img i3">
+                        <div class="m-product-right-item-img-1">
+                            
+                        </div>
+                    </div>
+                    <div class="cp-new-newlist-item-title">可以吃的“薄脆冻干咖啡”<br/>，咖啡饼干</div>
+                    <div class="m-product-left-price">¥15.9</div>
+                    <span class="countP">￥19.9</span>
+                </div>
+                <div class="m-product-right-item">
+                    <div class="m-product-right-item-img i4">
+                        <div class="m-product-right-item-img-1">
+                            
+                        </div>
+                    </div>
+                    <div class="cp-new-newlist-item-title">≥20%纯牛乳，绵软牛<br/>奶云朵吐司 400g</div>
+                    <div class="m-product-left-price">¥19.9</div>
+                    <span class="countP">￥25</span>
+                </div>
+                <div class="m-product-right-item">
+                    <div class="m-product-right-item-img i5">
+                        <div class="m-product-right-item-img-1">
+                           
+                        </div>
+                    </div>
+                    <div class="cp-new-newlist-item-title">清新英国梨香，强力<br/>去污酵素洗衣液</div>
+                    <div class="m-product-left-price">¥9.9</div>
+                </div>
+                <div class="m-product-right-item">
+                    <div class="m-product-right-item-img i6">
+                        <div class="m-product-right-item-img-1">
+                            
+                        </div>
+                    </div>
+                    <div class="cp-new-newlist-item-title">添加茂金属更强韧，家用金<br/>属色垃圾袋</div>
+                    <div class="m-product-left-price">¥7.5</div>
+                    <span class="countP">￥9.9</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="m-bed">
+        <div class="cp-row">
+            <div class="header">
+                <h1>床品
+                    <ul>
+                        <li><a href="#">收纳家饰</a>/</li>
+                        <li><a href="#">好物精选</a>/</li>
+                        <li><a href="#">疫情防控</a>/</li>
+                        <li><a href="#">618囤货精选</a>/</li>
+                        <li><a href="#">北欧原木</a>/</li>
+                        <li><a href="#">家庭医疗</a>/</li>
+                        <li><a href="#">餐厨爆款清单</a></li>
+                    </ul>
+                    <div class="f-right">更多新品 &gt;</div>
+                </h1>
+            </div>
+            <div class="content"></div>
+            <div class="bottom">
+                <div class="obj1">
+                    <div class="pic">
+                        <div class="img1"></div>
+                    </div>
+                    <div class="dis">
+                        <div class="title">
+                            北欧原木
+                        </div>
+                        <div class="price">
+                            199￥
+                        </div>
+                    </div>
+                </div>
+                <div class="obj1">
+                    <div class="pic">
+                        <div class="img1"></div>
+                    </div>
+                    <div class="dis">
+                        <div class="title">
+                            北欧原木
+                        </div>
+                        <div class="price">
+                            199￥
+                        </div>
+                    </div>
+                </div><div class="obj1">
+                    <div class="pic">
+                        <div class="img1"></div>
+                    </div>
+                    <div class="dis">
+                        <div class="title">
+                            北欧原木
+                        </div>
+                        <div class="price">
+                            199￥
+                        </div>
+                    </div>
+                </div><div class="obj1 last">
+                    <div class="pic">
+                        <div class="img1"></div>
+                    </div>
+                    <div class="dis">
+                        <div class="title">
+                            北欧原木
+                        </div>
+                        <div class="price">
+                            199￥
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="m-bottomBar">
+        <div class="cp-row">
+            <div class="us">
+                <div class="l1">
+                    <h1>
+                        客户服务
+                    </h1>
+                </div>
+                <div class="l1">
+                    <h1>
+                        何为网易严选
+                    </h1>
+                    <p>网易严选是深受新中产喜爱的生活方式品牌, 为消费者提供一站式、全品类、全方位的美好生活解决方案。我们通过简约、实用、舒适的美学设计, 不断带来高品质灵感好物, 陪伴3000万新中产用户「活出自己喜欢的样子」, 共同倡导多元化的生活价值主张——每个人都可以把生活的选择权交还给自己。</p>
+                </div>
+                <div class="l1 last">
+                    <h1>
+                        扫码下载严选app
+                    </h1>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./js/vue.js"></script>
+    <script type="text/javascript">
+        var vm=new Vue({
+            el:"#app",
+            data:{
+                style1:{
+                    side:true,
+                    move:false,
+                }
+                
+            },
+            mounted() {
+                window.addEventListener('scroll',this.handlerScroll)
+            },
+            methods: {
+                handlerScroll(){
+                    var scrollTop=window.pageYOffset || document.documentElement.scrollTop || document.bogy.scrollTop
+                    if(scrollTop>=570){
+                        this.style1.move=true
+                    }
+                    else{
+                        this.style1.move=false
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
